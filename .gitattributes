@@ -1,2 +1,45 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Detecta automáticamente archivos de texto y realiza la normalización LF
+* texto=automático
+# Personalizado para Visual Studio
+*.cs diff=csharp
+# Estándar para msysgit
+*.doc diff=astextplain
+*.DOC diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
+
+# ------------------------
+# Encuesta de población local
+#--------------------------
+# bibliotecas y paquetes
+*.a filtro=lfs -crlf
+*.apk filtro=lfs diff=lfs fusión=lfs -texto
+*.dll filtro=lfs -crlf
+*.dylib filtro=lfs diff=lfs fusión=lfs -texto
+*.exe filtro=lfs -crlf
+*.rar filtro=lfs diff=lfs fusionar=lfs -texto
+*.unitypackage filtro=lfs -crlf
+*.zip filtro=lfs -crlf
+
+# modelos y jugables
+*.blend filtro=lfs -crlf
+*.wav filtro=lfs diff=lfs fusión=lfs -texto
+
+# imágenes
+*.cubemap filtro=lfs -crlf
+*.exr filtro=lfs -crlf
+*.fbx filtro=lfs -crlf
+*.hdr filtro=lfs diff=lfs fusión=lfs -texto
+*.jpg filtro=lfs -crlf
+*.mp3 filtro=lfs -crlf
+*.mp4 filtro=lfs -crlf
+*.png filtro=lfs -crlf
+*.psd filtro=lfs -crlf
+*.tga filtro=lfs -crlf
+*.tif filtro=lfs -crlf
